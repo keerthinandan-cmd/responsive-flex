@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>FlexBox</title>
+    </head>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            transition: all 1s;
+            
+            margin-right: 5px;
+        }
+        .big{
+            display: flex;
+            width: 100%;
+            height: 100vh;
+            justify-content: center;
+            align-items: center;
+        }
+        .bigbox{
+            display: flex;
+            height: 100%;
+            width: 100%;
+            flex-direction: row;
+        }
+        .big11{
+            margin: 0.25rem;
+            flex: 1;
+            flex-basis: 100%;
+        }
+        .big1{
+            flex-direction: column;
+        }
+        #red{
+            background: red;
+        }
+            
+        #blue{
+            background-color: blue;
+        }
+        #green{
+            background-color: green;
+        }
+        #cyan{
+            background: cyan;
+        }
+        #magenta{
+            background: magenta;
+            flex-basis: 50%;
+        }
+        #yellow{
+            background: yellow;
+            flex-basis: 25%;
+        }
+        #black{
+            background: black;
+        }
+        #grey{
+            background: grey;
+        }
+        @media  screen and (max-width:600px) {
+            #blue{
+                flex-basis: 300%;
+            }
+            #row2{
+                flex-wrap: wrap;
+            }
+            #row3{
+                flex-direction: column-reverse;
+            }
+        }
+    </style>
+    <body>
+        <div class="big">
+            <div class="big1 bigbox">
+                <div class="big11 bigbox" id="row1">
+                        <div class="big11" id="red"></div>
+                        <div class="big11" id="blue"> </div>
+                        <div class="big11" id="green"> </div>
+               
+                </div>
+
+                <div class="big11 bigbox" id="row2">
+                        <div class="big11" id="cyan"></div>
+                        <div class="big11" id="magenta"></div>
+                        <div class="big11" id="yellow"></div>
+                </div>      
+            
+            <div class="big11 bigbox" id="row3">
+                <div class="big11" id="black"></div>
+                <div class="big11" id="grey"></div>
+            </div>
+        </div>
+    </body>            
