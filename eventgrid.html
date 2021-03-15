@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Sandbox</title>
+        <meta charset="UTF-8"/>
+    </head>
+    <style>
+        body{
+            font-family: sans-serif;
+            margin: 0;
+            height: 100%;
+            display: grid;
+            align-items: center;
+        }
+        #box{
+            width: 90%;
+            margin: 0 auto;
+            display:grid;
+            grid-template-columns: repeat(2,1fr);
+            grid-row-gap: 10px;
+            margin: auto;
+            align-items: center;
+         
+            
+        }
+        #wrapper1{
+            width: 200px;
+            height: 200px;
+            border: 1px solid black;
+            margin: 10px auto;
+        }
+        #wrapper2{
+            width: 200px;
+            height: 200px;
+            border: 1px solid black;
+            margin: 10px auto;
+        }
+        #wrapper3{
+            width: 200px;
+            height: 200px;
+            border: 1px solid black;
+            margin: 10px auto;
+        }
+        #wrapper4{
+            width: 200px;
+            height: 200px;
+            border: 1px solid black;
+            margin: 10px auto;
+        }
+        #wrapper5{
+            width: 200px;
+            height: 200px;
+            border: 1px solid black;
+            margin: 10px auto;
+           
+        }
+        #wrapper6{
+            width: 200px;
+            height: 200px;
+            border: 1px solid black;
+            margin: 10px auto;
+        }
+        #wrapper7{
+            width: 200px;
+            height: 200px;
+            border: 1px solid black;
+            margin: 10px auto;
+            animation-name:example;
+            animation-duration: 4s;
+        }
+        #wrapper8{
+            width: 200px;
+            height: 200px;
+            border: 1px solid black;
+            margin: 10px auto;
+            animation-name:changesize;
+            animation-duration: 4s;
+        }
+        #wrapper9{
+            width: 200px;
+            height: 200px;
+            border: 1px solid black;
+            margin: 10px auto;
+            animation-name:slidein;
+            animation-duration: 4s;
+        }
+        #wrapper10{
+            width: 200px;
+            height: 200px;
+            border: 1px solid black;
+            margin: 10px auto;
+            animation-name: changecolor;
+            animation-duration: 4s;
+        }
+        @keyframes example{
+            from {background-color: white;}
+            to{background-color: black;}
+            
+        }
+        @keyframes slidein{
+            from{
+                width: 200px;
+                height: 200px;
+            }
+            to{
+                width:50px;
+                height: 50px;
+            }
+        }
+        @keyframes changecolor{
+            from {background-color:white;}
+            to{background-color: blue;}
+        }
+        @keyframes changesize{
+            from{width: 200px;
+                 height: 200px;}
+            to{
+                width: 300px;
+                height: 300px;
+            }
+        }
+    </style>
+    <body>
+        <div id="box">
+            <div id="wrapper1">1</div>
+            <div id="wrapper2">2</div>
+    
+        
+            <div id="wrapper3">3</div>
+            <div id="wrapper4">4</div>
+      
+            <div id="wrapper5">5</div>
+            <div id="wrapper6">6</div>
+
+     
+            <div id="wrapper7">7</div>
+            <div id="wrapper8">8</div>
+
+     
+            
+            <div id="wrapper9">9</div>
+            <div id="wrapper10">10</div>
+
+        </div>
+        <script>
+            const wrap1=document.querySelector("#wrapper1")
+            wrap1.addEventListener("click",e =>{
+                alert("You clicked the first one");
+            })
+            const wrap2=document.querySelector("#wrapper2")
+            wrap2.addEventListener("mouseover",e=>{
+                alert("Your mouse is over Box2");
+            })
+            const wrap3=document.querySelector("#wrapper3")
+            wrap3.addEventListener("mousemove",e=>{
+                alert("Box Is Blurred");
+            })
+            const wrap4=document.querySelector("#wrapper4")
+            wrap4.addEventListener("mouseup",e=>{
+                alert("You Pressed Key");
+            })
+            const wrap5=document.querySelector("#wrapper5")
+            wrap5.addEventListener("mouseout",e=>{
+                alert("Your mouse is out");
+            })
+            const wrap6=document.querySelector("#wrapper6")
+            wrap6.addEventListener("altkey",e=>{
+                alert("altkey is pressed");
+            })
+
+
+
+        </script>
+            
+    </body>
+</html>
